@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.album_tabb.MainActivity$SectionsPagerAdapter"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Cal"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:textSize="30dp"
+            android:gravity="end|center" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:gravity="end|center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id = "@+id/up"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FFFFFF"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:text="Up"/>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/backspace"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/backspace"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <TableRow>
+            <Button
+                android:id = "@+id/eraseall"
+                android:text = "C"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/pare1"
+                android:text = "("
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/pare2"
+                android:text=")"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id="@+id/div"
+                android:text=" / "
+                android:textSize="20dp"
+                android:background="#CCCCCC"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></LinearLayout>
+
+        <TableRow>
+            <Button
+                android:id = "@+id/num7"
+                android:text = "7"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/num8"
+                android:text = "8"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/num9"
+                android:text="9"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id="@+id/mul"
+                android:text=" X "
+                android:textSize="20dp"
+                android:background="#CCCCCC"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></LinearLayout>
+
+        <TableRow>
+            <Button
+                android:id = "@+id/num4"
+                android:text = "4"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/num5"
+                android:text = "5"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/num6"
+                android:text="6"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id="@+id/minus"
+                android:text=" ㅡ "
+                android:textSize="20dp"
+                android:background="#CCCCCC"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></LinearLayout>
+
+        <TableRow>
+            <Button
+                android:id = "@+id/num1"
+                android:text = "1"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/num2"
+                android:text = "2"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/num3"
+                android:text="3"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id="@+id/plus"
+                android:text=" + "
+                android:textSize="20dp"
+                android:background="#CCCCCC"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></LinearLayout>
+
+        <TableRow>
+            <Button
+                android:id = "@+id/mod"
+                android:text = "%"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/num0"
+                android:text = "0"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id = "@+id/dot"
+                android:text="."
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#CCCCCC"/>
+            <Button
+                android:id="@+id/cal"
+                android:text=" = "
+                android:textSize="20dp"
+                android:background="#0467ff"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
